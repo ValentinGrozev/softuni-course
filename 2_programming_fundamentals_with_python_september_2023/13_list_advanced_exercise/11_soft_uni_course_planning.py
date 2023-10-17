@@ -32,7 +32,7 @@ while lesson != "course start":
                 exercise = schedule_of_lessons.pop(first_index + 1)
                 schedule_of_lessons.insert(second_index + 1, exercise)
             if (title_of_second_lesson + "-Exercise") in schedule_of_lessons:
-                exercise = schedule_of_lessons.pop(second_index+ 1)
+                exercise = schedule_of_lessons.pop(second_index + 1)
                 schedule_of_lessons.insert(first_index + 1, exercise)
     elif current_lesson[0] == "Exercise":
         if current_lesson[1] not in schedule_of_lessons:
