@@ -18,7 +18,6 @@ while numbers_to_delete < numbers_to_remove:
     list_of_int_numbers.remove(smallest_number)
     numbers_to_delete += 1
     smallest_number = sys.maxsize
-    smallest_index = 0
 
 for elements in range(len(list_of_int_numbers)):
     element = str(list_of_int_numbers[elements])
