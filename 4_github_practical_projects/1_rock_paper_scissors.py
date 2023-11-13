@@ -12,11 +12,11 @@ computer_score = 0
 
 player_move = input("Choose [r] for Rock, [p] for Paper, [s] for Scissors: ")
 
-if player_move == "r" or "R":
+if player_move == "r" or player_move == "R":
     player_move = rock
-elif player_move == "p" or "P":
+elif player_move == "p" or player_move == "P":
     player_move = paper
-elif player_move == "s" or "S":
+elif player_move == "s" or player_move == "S":
     player_move = scissors
 else:
     raise SystemExit("Invalid input, Try again...")
@@ -48,11 +48,11 @@ player_decision = input("Type [yes] to play again or [no] to quit: ")
 while player_decision == "yes" or player_decision == "Yes":
     player_move = input("Choose [r] for Rock, [p] for Paper, [s] for Scissors: ")
 
-    if player_move == "r" or "R":
+    if player_move == "r" or player_move == "R":
         player_move = rock
-    elif player_move == "p" or "P":
+    elif player_move == "p" or player_move == "P":
         player_move = paper
-    elif player_move == "s" or "S":
+    elif player_move == "s" or player_move == "S":
         player_move = scissors
     else:
         raise SystemExit("Invalid input, Try again...")
