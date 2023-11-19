@@ -2,7 +2,7 @@ import re
 
 text = input()
 
-while True:
+while text:
     pattern = r"\d+"
     matches = re.findall(pattern, text)
     if matches:
