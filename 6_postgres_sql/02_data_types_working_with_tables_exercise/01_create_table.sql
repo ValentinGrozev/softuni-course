@@ -1,0 +1,5 @@
+CREATE TABLE minions(
+	ID SERIAL PRIMARY KEY,
+	name VARCHAR (30),
+	age INT
+)
