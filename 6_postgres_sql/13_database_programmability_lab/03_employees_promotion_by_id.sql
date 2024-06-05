@@ -19,3 +19,22 @@ LANGUAGE plpgsql
 -- CALL sp_increase_salary_by_id(17)
 
 -- SELECT salary from employees WHERE employee_id = 17
+
+
+-- Add second solution for that task
+
+CREATE OR REPLACE PROCEDURE sp_increase_salary_by_id(id INT)
+AS
+$$
+BEGIN
+	IF id NOT in (SELECT employee_id FROM employees) THEN
+		ROLLBACK;
+	ELSE
+		UPDATE employees AS e
+			SET salary = salary * 1.05
+		WHERE 
+			employee_id = id;
+	END IF;
+END;
+$$
+LANGUAGE plpgsql
